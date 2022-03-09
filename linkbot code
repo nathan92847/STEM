@@ -1,0 +1,19 @@
+#include <linkbot.h>
+
+CLinkbotI Steve ;
+
+//straightaway
+Fil.setJointSpeeds(170,NaN,150);
+Fil.driveTime(4);
+
+//top curve left
+Fil.setJointSpeeds(120,NaN,200);
+Fil.driveTime(3.5);
+
+//straightleftline
+Fil.setJointSpeeds(170,NaN,150);
+Fil.driveTime(4);
+
+//bottomcurve
+Fil.setJointSpeeds(120,NaN,200);
+Fil.driveTime(3.5);
