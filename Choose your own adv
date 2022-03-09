@@ -1,0 +1,199 @@
+//variables
+int introChoice, middleChoice1, menuChoice;
+string_t name1, name2, name3, name4;
+//random integers
+int num1 = randint(20, 38);
+int num2 = randint(18, 23);
+//intro
+void menu(){
+    printf("Type a male name: ");
+    scanf("%i", &name1);
+    printf("Type a different male name: ");
+    scanf("%i", &name3);
+    printf("Type a female name: ");
+    scanf("%i", &name2);
+    printf("Type a different female name: ");
+    scanf("%i", &name4);
+    printf("Look through story or a roadmap\n");
+    printf("Enter '1' for story. Enter '2' for the roadmap. \n");
+    scanf("%i", &menuChoice);
+    while(menuChoice != 1 && menuChoice != 2){
+        printf("That is not a choice. Choose '1' or '2' \n");
+        scanf("%i", &menuChoice);
+    }
+}
+//6 functions
+void intro(){
+    printf(name1, " is on the way to pick up the winnings for your lottery ticket of ", num1," million dollars. You are now the \n\
+most loved person in the family. But you were the most hated. You were the trouble maker. You were told by ", name2 , ", \n\
+your mother, that you are the worst child anyone could ever have. You ask yourself, why is this happening? \n");
+    printf("Choose your path: 1, 2, or 3\n");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+//middle1
+void middle1(){
+    printf("You chose path 1\n\
+When ", name2 , " finds out about your winnings, she start being nice to you. She kindly ask you \n\
+if you could split some of your winnings with her. She say that she deserves at least half of the money because \n\
+she raised you. Without her, you wouldn’t be there. You tell yourself to not fall for it ", name1,". \n");
+    printf("Make your ending choice: 1, 2, or 3\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+//end1
+void end1(){
+    printf("You chose ending 1 \n\
+You give in and you give ", name2, " half of your winnings. She tells you, ", name1 ," give me more. \n\
+Eventually, you run out of money. You’re left with nothing and you go back to being the worst child. \n");
+    exit (1);
+}
+//end2
+void end2(){
+    printf("You chose ending 2 \n\
+You give ", name2 ," some of your winnings. Your mom says, ", name1 , ", give me more, but you decline. Your mom decide to \n\
+kick you out for disobeying her. You are left with 2 million dollars. You finally realize you will never see your \n\
+family again.");
+    exit (1);
+}
+//end3
+void end3(){
+    printf("You chose ending 3 \n\
+You decide not to give any of your winnings to ", name2, ". You get kicked out the house. But you have a plan. You \n\
+rent a small apartment to live in under the name of ", name1,". Your parents will never be in your way again \n\
+and you live a happy life.");
+    exit (1);
+}
+//middle2
+void middle2(){
+    printf("You chose path 2 \n\
+Your brother ", name3 ," hears about your winnings. He thinks about all the things he could buy with that much money. \n\
+He tells you, ", name1 ," could you spare me some money? He acts all innocent like he didn’t do anything to you. \n\
+He says that you should share some of the money because you guys are family. \n");
+    printf("Make your ending choice: 4, 5, or 6\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 4 && middleChoice1 != 5 && middleChoice1 != 6){
+        printf("That is not a choice. Please choose '4', '5', or '6'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+
+//end4
+void end4(){
+    printf("You chose ending 4 \n\
+You give in after all the begging ", name3," has done. You take him to the nearby store. He asks for a new gaming console. He \n\
+also asks for all the expensive gaming equipment. After you get back home, he tells you, thank you ", name1," and runs away \n\
+to his room with all the new games you bought him and acts like nothing happened.");
+    exit (1);
+}
+//end5
+void end5(){
+    printf("You chose ending 5 \n\
+", name3,"'s birthday is coming up. So you go to the game store. You buy your brother all the gaming equipment he asked for. You go \n\
+home to surprise him with all the gifts. But tells you, ", name1 ," you're the worst brother ever. These are the wrong games.");
+    exit (1);
+}
+//end6
+void end6(){
+    printf("You chose ending 6 \n\
+You tell “, name3,” you aren’t buying him any gaming equipment. He gets mad and tells “,name2,”. Your mom gets mad at you and \n\
+says that you are greedy. Your mom demands you to at least help your family out. You decline and get kicked out the \n\
+house and will never be allowed back in.");
+    exit (1);
+}
+//middle3
+void middle3(){
+    printf("You chose path 3 \n\
+“, name4,” finds out about your winnings. She asks you if you could take her on a vacation to Hawaii. She also asks if you \n\
+could pay for all the expenses. She says you could tag along. She says to you, “, name1,” you will have a blast. \n");
+    printf("Make your ending choice: 7, 8, or 9\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 7 && middleChoice1 != 8 && middleChoice1 != 9){
+        printf("That is not a choice. Please choose '7', '8', or '9'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+//end7
+void end7(){
+    printf("You chose ending 7 \n\
+“,name1,” buys two plane tickets to Hawaii. “,name4,” is very grateful. You both have a fun time. You both do fun activities together. \n\
+You get back home and live a happy life with your family.");
+    exit (1);
+}
+//end8
+void end8(){
+    printf("You chose ending 8 \n\
+You surprise “, name4,” with Hawaii plane tickets. Your sister is very excited and is ready to leave for Hawaii. You both pack up \n\
+and are getting ready to leave. “,name4,” and “,name1,” both get in the car to go to the airport, but you missed the flight. “,name1,” misread the \n\
+plane ticket and went 1 hour after the plane left.");
+    exit (1);
+}//end9
+void end9(){
+    printf("You chose ending 9 \n\
+You tell “,name4,” you got two plane tickets to Hawaii. You’re both very excited. You get ready to leave. But you get \n\
+an email saying your card under the name of “,name1,” was declined. Your tickets are canceled and all seats on the plane are taken.");
+    exit (1);
+}
+void menuChoice1(){
+    printf("Choose your own story. \n");
+}
+//roadmap
+void menuChoice2(){
+    printf("You are ", num2," years old. You win a lottery ticket and now you are basically famous. Everyone wants you for your money. \n\
+Your family members wants you to buy stuff for them and are only being nice to you for the \n\
+money. You have to choose what you will do to deal with your family's begging. Path one, you choose to give half \n\
+your winnings to your parents. But they are very ungrateful for what you gave to them. Path two, you will buy your \n\
+brother the games he wanted. Path three, you will take your sister on a vacation with you. \n");
+}
+int main(){  //main program to run (logic)
+    menu();
+    if(1 == menuChoice){
+        menuChoice1();
+    }
+    if(1 == menuChoice){
+        menuChoice2();
+    }
+    intro();
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+    }
+    if(2 == introChoice){
+        middle2();
+    }
+        if(middleChoice1 == 4){
+            end4();
+        }
+        if(middleChoice1 == 5){
+            end5();
+        }
+        if(middleChoice1 == 6){
+            end6();
+        }
+    if(3 == introChoice){
+        middle3();
+    }
+        if(middleChoice1 == 7){
+            end7();
+        }
+        if(middleChoice1 == 8){
+            end8();
+        }
+        if(middleChoice1 == 9){
+            end9();
+        }
+}
