@@ -1,6 +1,6 @@
 #include <linkbot.h>
 
-CLinkbotI Steve ;
+CLinkbotI Fil ;
 
 //straightaway
 Fil.setJointSpeeds(170,NaN,150);
