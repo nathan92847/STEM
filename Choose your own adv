@@ -109,9 +109,7 @@ house and will never be allowed back in.");
 }
 //middle3
 void middle3(){
-    printf("You chose path 3 \n\
-“, name4,” finds out about your winnings. She asks you if you could take her on a vacation to Hawaii. She also asks if you \n\
-could pay for all the expenses. She says you could tag along. She says to you, “, name1,” you will have a blast. \n");
+    printf("You chose path 3. ",name4, " finds out about your winnings. She asks you if you could take her on a vacation to Hawaii. She also asks if you could pay for all the expenses. She says you could tag along. She says to you, ", name1,", you will have a blast. \n");
     printf("Make your ending choice: 7, 8, or 9\n");
     scanf("%i", &middleChoice1);
     while(middleChoice1 != 7 && middleChoice1 != 8 && middleChoice1 != 9){
@@ -121,23 +119,17 @@ could pay for all the expenses. She says you could tag along. She says to you, �
 }
 //end7
 void end7(){
-    printf("You chose ending 7 \n\
-“,name1,” buys two plane tickets to Hawaii. “,name4,” is very grateful. You both have a fun time. You both do fun activities together. \n\
+    printf("You chose ending 7, ",name1, "buys two plane tickets to Hawaii. ",name4," is very grateful. You both have a fun time. You both do fun activities together. \n\
 You get back home and live a happy life with your family.");
     exit (1);
 }
 //end8
 void end8(){
-    printf("You chose ending 8 \n\
-You surprise “, name4,” with Hawaii plane tickets. Your sister is very excited and is ready to leave for Hawaii. You both pack up \n\
-and are getting ready to leave. “,name4,” and “,name1,” both get in the car to go to the airport, but you missed the flight. “,name1,” misread the \n\
-plane ticket and went 1 hour after the plane left.");
+    printf("You chose ending 8. You surprise", name4, " with Hawaii plane tickets. Your sister is very excited and is ready to leave for Hawaii. You both pack up and are getting ready to leave.",name4, "and ",name1,"both get in the car to go to the airport, but you missed the flight. ",name1," misread the plane ticket and went 1 hour after the plane left.");
     exit (1);
 }//end9
 void end9(){
-    printf("You chose ending 9 \n\
-You tell “,name4,” you got two plane tickets to Hawaii. You’re both very excited. You get ready to leave. But you get \n\
-an email saying your card under the name of “,name1,” was declined. Your tickets are canceled and all seats on the plane are taken.");
+    printf("You chose ending 9 .You tell ",name4," you got two plane tickets to Hawaii. You’re both very excited. You get ready to leave. But you get an email saying your card under the name of ",name1," was declined. Your tickets are canceled and all seats on the plane are taken.");
     exit (1);
 }
 void menuChoice1(){
@@ -197,3 +189,5 @@ int main(){  //main program to run (logic)
             end9();
         }
 }
+
+
